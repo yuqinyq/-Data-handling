@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+
+/*************************************************/
+/* 样式初始化部分 */
+/*************************************************/
+*{
+    box-sizing: border-box;
+}
+html,body,div,p,input,a,button,form,table,thead,table,thead,th,tr,td,tbody{
+    margin:0;padding:0;
+}
+section,article,header,footer,nav{
+    display: block;
+}
+ul,li{list-style:none;}
+input{outline:none;cursor: pointer;}
+a{color:#333;text-decoration: none;cursor: pointer;}
+body{
+    font-size: 16px;
+    font-family: "微软雅黑";
+}
+html,body{
+    height:100%;
+    width: 100%;
+}
+/*清除浮动*/
+.clearfix:before,.clearfix:after{
+    content: "";
+    display: table;
+}
+.clearfix:after{clear:both;}
+
+.fl{float:left;}
+.fr{float: right;}
+
+
+/*************************************************/
+/* 样式细节设置部分 */
+/*************************************************/
+form{
+    margin: 20px;
+}
+form>input{
+    height: 30px;
+    width: 120px;
+    font-size: 16px;
+    border:1px solid #979698;
+    background-color: #eae9e9;
+}
+form>input:focus{
+	border-style: none;
+	box-shadow:0 0 2px 1px #26acff;
+}
+table{
+    margin-left: 20px;
+    width: 1200px;
+    border-collapse: collapse;
+    text-align: left;
+}
+tr{
+    height: 40px;
+    border: 1px solid #c1c7c8;
+    background-color: #067699;
+    font-size: 18px;
+}
+thead{
+    color: #fff;
+}
+tr>th:first-child,tr>td:first-child{
+    padding-left: 10px;
+    font-size: 20px;
+}
+tbody>tr:nth-child(odd){
+    background-color: #eae9e9;
+}
+tbody>tr:nth-child(even){
+    background-color: #e9f5f7;
+}
+tr input{
+    height: 20px;
+    width: 20px;
+}
+.decribe{
+    color: #299dfd;
+}
+.delete{
+    color:#f46464;
+}
+/*遮罩层*/
+
+.mask{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index:10;
+    background-color: #000;
+    opacity: .5;
+    top:0;
+    left: 0;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    z-index: 11;
+    color: #0474d9;
+    transform: translate(-50%, -50%);
+}
